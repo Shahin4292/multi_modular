@@ -26,3 +26,7 @@ A new Flutter project.
 3- -- dart pub outdated
 
 4- -- dart pub upgrade --major-versions
+
+
+## Added injection.config.dart
+1- -- dart run build_runner watch --delete-conflicting-outputs

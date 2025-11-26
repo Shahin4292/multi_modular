@@ -5,7 +5,10 @@ version: 1.0.0+1
 
 environment:
   sdk: ^3.9.2
+
 dependencies:
+  get_it:
+  injectable:
   flutter:
     sdk: flutter
 
@@ -13,6 +16,8 @@ dependencies:
   melos: ^6.3.2
 
 dev_dependencies:
+  injectable_generator:
+  build_runner:
   flutter_test:
     sdk: flutter
 
