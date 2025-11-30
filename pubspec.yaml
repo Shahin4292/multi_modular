@@ -12,6 +12,7 @@ dependencies:
   datastore:
     path: core/datastore
 
+
   get_it:
   injectable:
   flutter:

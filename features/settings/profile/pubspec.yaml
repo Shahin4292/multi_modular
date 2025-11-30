@@ -8,6 +8,8 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  multi_modular:
+    path: ../../../
   flutter:
     sdk: flutter
 
