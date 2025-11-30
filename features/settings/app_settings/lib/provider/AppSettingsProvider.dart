@@ -1,4 +1,5 @@
-abstract class AppSettingsProvider {
+
+abstract class AppSettingsProvider{
   String getAppLanguage();
-  String getThemeType();
+  String themeType();
 }

@@ -6,7 +6,7 @@ import 'di/injection.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  configureDependencies(Environment.dev);
+  configureDependencies(Environment.prod);
   runApp(const MyApp());
 }
 
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             Text('App Language: ${appSettingsProvider.getAppLanguage()}'),
             Text(
-              'App Theme: ${appSettingsProvider.getThemeType()}',
+              'App Theme: ${appSettingsProvider.themeType()}',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],

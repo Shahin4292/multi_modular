@@ -3,6 +3,7 @@ import 'package:injectable/injectable.dart';
 
 import 'AppSettingsProvider.dart';
 
+
 @Injectable(as: AppSettingsProvider, env: [Environment.prod])
 class ProdAppSettingsProviderImpl extends AppSettingsProvider{
   @override
@@ -11,7 +12,7 @@ class ProdAppSettingsProviderImpl extends AppSettingsProvider{
   }
 
   @override
-  String getThemeType() {
+  String themeType() {
     return "dark";
   }
 }
@@ -25,7 +26,7 @@ class DevAppSettingsProviderImpl extends AppSettingsProvider{
   }
 
   @override
-  String getThemeType() {
+  String themeType() {
     return "Light";
   }
 }
