@@ -3,6 +3,18 @@ import 'package:data/error_handler/data_source_extension.dart';
 import 'package:dio/dio.dart';
 import 'package:domain/model/failure.dart';
 
+class ErrorHandler implements Exception{
+  late Failure failure;
+
+  ErrorHandler.handle(dynamic error){
+    if(error is DioException){
+      failure = handleError(error);
+    } else{
+      failure = DataSource.defaultError.getFailure();
+    }
+  }
+}
+
 Failure handleError (DioException error){
   switch(error.type){
     case DioExceptionType.connectionTimeout:
@@ -19,7 +31,11 @@ Failure handleError (DioException error){
       return DataSource.canceled.getFailure();
     case DioExceptionType.connectionError:
       return DataSource.connectionTimeOut.getFailure();
-    case DioExceptionType.unknown:
-      return DataSource.defaultError.getFailure();
+    default:
+      if(error.response !=null && error.response?.statusCode != null && error.response?.statusMessage != null){
+        return Failure(error.response?.statusCode ?? 0, error.response?.statusMessage ?? "");
+      } else{
+        return DataSource.defaultError.getFailure();
+      }
   }
 }
