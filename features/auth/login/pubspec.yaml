@@ -12,6 +12,8 @@ dependencies:
   dio: ^5.9.0
   retrofit: ^4.9.1
   json_annotation: ^4.9.0
+  domain:
+    path: ../../../core/domain
   datastore:
     path: ../../../core/datastore
   data:

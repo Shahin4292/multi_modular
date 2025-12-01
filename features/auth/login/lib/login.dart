@@ -1,4 +1,3 @@
-library;
 
 import 'package:datastore/provider/SessionProviderImp.dart';
 import 'package:dio/dio.dart';
