@@ -10,6 +10,7 @@ environment:
 dependencies:
   get_it: ^9.1.1
   injectable: ^2.7.0
+  shared_preferences: ^2.5.3
   flutter:
     sdk: flutter
 
