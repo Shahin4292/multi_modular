@@ -17,13 +17,13 @@ class DioFactory {
     Map<String, String> headers = {
       contentType: applicationJson,
       accept: applicationJson,
-      authorization: "your_access_token", // todo get access token here
-      defaultLanguage: "app language", // todo get app language here
+      authorization: accessToken,
+      defaultLanguage: language,
       clientId: "app_client_id", // todo get client id here
     };
 
     dio.options = BaseOptions(
-      baseUrl: "your_base_url", // todo get base url from config
+      baseUrl: baseUrl,
       headers: headers,
       receiveTimeout: const Duration(seconds: 60),
       sendTimeout: const Duration(seconds: 60),

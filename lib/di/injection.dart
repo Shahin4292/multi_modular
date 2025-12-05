@@ -14,8 +14,8 @@
 import 'package:app_settings/di/injection.dart';
 import 'package:app_settings/provider/AppSettingsProviderImpl.dart';
 import 'package:datastore/di/injection.dart';
-import 'package:datastore/provider/SessionProvider.dart';
-import 'package:datastore/provider/SessionProviderImp.dart';
+import 'package:datastore/provider/session/session_provider.dart';
+import 'package:datastore/provider/session/session_provider_imp.dart';
 import 'package:get_it/get_it.dart';
 import 'package:app_settings/provider/AppSettingsProvider.dart';
 import 'package:injectable/injectable.dart';

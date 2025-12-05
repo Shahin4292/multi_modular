@@ -1,5 +1,5 @@
 
-import 'package:datastore/provider/SessionProviderImp.dart';
+import 'package:datastore/provider/session/session_provider_imp.dart';
 import 'package:dio/dio.dart';
 
 /// A Calculator.
