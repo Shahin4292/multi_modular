@@ -19,6 +19,7 @@ command:
       retrofit: ^4.9.1
       dartz: ^0.10.1
       connectivity_plus: ^7.0.0
+      shared_preferences: ^2.5.3
 
     dev_dependencies:
       injectable_generator: ^2.11.0
