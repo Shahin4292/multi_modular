@@ -5,9 +5,9 @@ import 'package:injectable/injectable.dart';
 
 import 'di/injection.dart';
 
-void main() {
+void main()  {
   WidgetsFlutterBinding.ensureInitialized();
-  configureDependencies(Environment.prod);
+  configureDependencies(Environment.dev);
   runApp(const MyApp());
 }
 
